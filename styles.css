@@ -1,4 +1,7 @@
 /*  your css code here. If applicable */
+body {
+	box-sizing: border-box;
+}
 .active {
 	background-color:rgb(112,113,112);
 }
@@ -14,7 +17,7 @@
 }
 
 .modal-content {
-	width:60%
+	width:100%;
 }
 
 .modal-header {
@@ -23,7 +26,16 @@
 	align-items:center;
 	background-color:rgb(79,171,77);
 	color:white;
-	width:100%
+	width:100%;
+	padding:1rem 0 1rem 1rem;
+}
+
+#close-btn {
+	margin-right:100px;
+}
+
+.modal-body {
+	padding:1rem;
 }
 
 @keyframes move {

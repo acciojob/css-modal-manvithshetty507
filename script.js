@@ -5,13 +5,13 @@ btn.addEventListener('click',btnClicked)
 
 function btnClicked() {
 	document.body.classList.add('active');
-	document.getElementsByClassName('modal')[0].style.display = 'flex';
+	document.getElementsByClassName('modal')[0].style.display = 'block';
 	document.getElementById('close-btn').addEventListener('click',closeModal);
-	btn.disabled = true;
+	btn.style.display='none';
 	function closeModal() {
 		document.getElementsByClassName('modal')[0].style.display = 'none';
 		document.body.classList.remove('active');
-		btn.disabled = false;
+		btn.style.display='block';
 	}
 }
 
