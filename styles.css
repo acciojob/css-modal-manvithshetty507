@@ -1,1 +1,36 @@
 /*  your css code here. If applicable */
+.active {
+	background-color:rgb(112,113,112);
+}
+
+.modal {
+	background-color:white;
+	position:relative;
+	animation: move 1s 1 forwards;
+	display:flex;
+	justify-content:center;
+	width:100%;
+	display:none;
+}
+
+.modal-content {
+	width:60%
+}
+
+.modal-header {
+	display:flex;
+	justify-content:space-between;
+	align-items:center;
+	background-color:rgb(79,171,77);
+	color:white;
+	width:100%
+}
+
+@keyframes move {
+	from {
+		top:0px
+	}
+	to {
+		top:150px;
+	}
+}
